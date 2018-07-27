@@ -1,6 +1,6 @@
 ### create Git & Heroku Application
 
-    * Git Init
+1. Git Init
 
         $ git init
 
@@ -12,14 +12,16 @@
 
         $ heroku create
 
-    * As Use default 
+2. Connect to heroku git
+
+    2.1 Default add
 
         $ git remote add heroku https://xxx.xxx.xxx.git
 
-    * As rename Heroku-Project (alternatively)
+    2.2 (Alternatively) As rename for heroku-project-name
 
-        $ heroku git:remote -a fullstack-coures-webapp
+        $ heroku git:remote -a heroku-project-name
 
-    * Push code to heroku
+3. Deploy code to heroku
 
         $ git push heroku master

@@ -14,7 +14,7 @@
 
 2. Connect to heroku git
 
-    2.1 Default add
+    2.1 Remote add
 
         $ git remote add heroku https://xxx.xxx.xxx.git
 
@@ -25,3 +25,11 @@
 3. Deploy code to heroku
 
         $ git push heroku master
+
+4. See Heroku logs
+
+        $ heroku logs
+
+5. Open Application
+
+        $ heroku open

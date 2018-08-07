@@ -9,17 +9,24 @@
 	},
 	"scripts": {
 		"debug": "nodemon --inspect-brk=9229 server.js",
-		"dev": "nodemon index.js",
-		"start": "node index.js"
+		"start": "node index.js",
+		"server": "nodemon index.js",
+		"client": "npm run start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
 	},
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"body-parser": "^1.18.3",
 		"cookie-session": "^2.0.0-beta.3",
 		"express": "^4.16.3",
 		"mongoose": "^5.2.6",
 		"passport": "^0.4.0",
-		"passport-google-oauth20": "^1.0.0"
+		"passport-google-oauth20": "^1.0.0",
+		"stripe": "^6.7.0"
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"concurrently": "^3.6.1"
+	}
 }

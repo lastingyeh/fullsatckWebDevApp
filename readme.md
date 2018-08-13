@@ -33,3 +33,9 @@
 5. Open Application
 
         $ heroku open
+
+### Related Services
+
+1. Payment (https://stripe.com/)
+
+2. Email service (https://app.sendgrid.com/)

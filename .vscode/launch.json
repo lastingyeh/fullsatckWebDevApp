@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "attach",
-            "name": "Attach by Process ID",
+            "name": "Attach",
             "restart": true,
             "port": 9229
         }

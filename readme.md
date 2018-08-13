@@ -39,3 +39,9 @@
 1. Payment (https://stripe.com/)
 
 2. Email service (https://app.sendgrid.com/)
+
+3. use ngrok (replaced localtunnel) received email feedback in development env with sendgird (https://ngrok.com/)
+
+### Related Resources
+
+[Node With React:Fullstack Web Development](https://www.udemy.com/node-with-react-fullstack-web-development/)
